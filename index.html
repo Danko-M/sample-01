@@ -5,11 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>sample 01</title>
 
     <!-- Bootstrap -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+      .navbar-header { text-align: center;}
+      .navbar-brand { float: none; position: absolute;}
+      .navbar-collapse .navbar-brand { display: none;}
+      .devices {width: 100%; max-width: 390px; margin: 0 auto;}
+      .progress { height: 10px;}
+      .progress-bar {background-color: #F5E735;}
+      .article {text-align: left;}
+      @media only screen and (min-width: 768px) {
+        .nav>li {display: inline-block;}
+        .navbar-brand {position: relative;}
+        .navbar-header .navbar-brand { display: none; }
+        .navbar-collapse .navbar-brand { display: block;}
+        .list-inline>li {padding: 0;}
+        .devices { max-width: 100%; }
+        .article {border-bottom: 3px solid #999;}
+      } 
+      @media only screen and (max-width: 767px) {
+        /*.navbar-brand {}*/
+        /*.navbar-collapse .navbar-brand { display: none;}*/
+      }
+    </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,22 +39,390 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
-
-    <div class="container-fluid">
-    tekst
-      <div class="container">
-         tekst 
-        </div>  
-    </div>
-
-    <div class="container">
-      tekst          
-    </div>
     
+    <!-- navigation -->
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav text-center list-inline">
+            <li class="active"><a href="#">HOME<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a class="navbar-brand" href="#">Brand</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+    </div><!-- /.container -->
+
+
+
+    
+    <!-- jumbotron -->
+    <div class="container-fluid">
+      <div class="container">
+        <div id="carousel-main" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-main" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-main" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="http://placehold.it/1200x600?text=img+01" alt="...">
+              <div class="container">
+                <div class="carousel-caption">
+                  <div class="text-center">Hello,we are Molly,and we create</div>
+                  <h1>BRANDS</h1>
+                  <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+                  <a class="btn btn-sm btn-primary" href="#" role="button">Sign up today</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="http://placehold.it/1200x600?text=img+02" alt="...">
+              <div class="container">
+                <div class="carousel-caption">
+                  <div class="text-center">Hello,we are Molly,and we create</div>
+                  <h1>Another example headline.</h1>
+                  <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+                  <a class="btn btn-sm btn-primary" href="#" role="button">Sign up today</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="http://placehold.it/1200x600?text=img+03" alt="...">
+              <div class="container">
+                <div class="carousel-caption">
+                  <div class="text-center">Hello,we are Molly,and we create</div>
+                  <h1>One more for good measure.</h1>
+                  <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+                  <a class="btn btn-sm btn-primary" href="#" role="button">Sign up today</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-main" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#carousel-main" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- services -->
+    <div class="container text-center">    
+      <h2>SERVICES</h2>    
+      <div>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</div>
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="http://placehold.it/130x113?text=Hello+World+03" alt="..">
+          <h3>WEB DESIGN</h3>
+          <div>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</div>
+        </div>
+        <div class="col-sm-3">
+          <img src="http://placehold.it/130x113?text=Hello+World+03" alt="..">
+          <h3>WEB DESIGN</h3>
+          <div>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</div>
+        </div>
+        <div class="col-sm-3">
+          <img src="http://placehold.it/130x113?text=Hello+World+03" alt="..">
+          <h3>WEB DESIGN</h3>
+          <div>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</div>
+        </div>
+        <div class="col-sm-3">
+          <img src="http://placehold.it/130x113?text=Hello+World+03" alt="..">
+          <h3>WEB DESIGN</h3>
+          <div>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- we make web -->
+    <div class="container-fluid text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="img-responsive devices" src="http://placehold.it/390x439?text=devices" alt="..">
+          </div>
+          <div class="col-sm-8">
+            <div>WE MAKE WEB DESIGN</div>
+            <div>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</div>
+            <ul class="text-left">
+              <li>CLEAN AND MODERN DESIGN</li>
+              <li>FULLY RESPONSIVE</li>
+              <li>SINGLEPAGE &amp; MULTIPAGE</li>
+              <li>GREAT FOR ANY BUSINESS</li>
+            </ul>
+          </div>
+         </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center">
+      <a class="btn btn-sm btn-primary" href="#" role="button">GET STARTED</a>
+    </div>
+
+
+
+
+    <!-- portfolio -->
+    <div class="container text-center">
+      <h2>PORTFOLIO</h2>
+      <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>  
+
+      <div>
+        <a class="btn btn-sm btn-primary" href="#" role="button">SHOW MORE</a>
+      </div>    
+    </div>
+
+
+
+
+    <!-- video -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/24474457" width="500" height="281"></iframe>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div>LOREM IPSUM VIDEO HERE</div>
+            <em>Quisque velit nisi, pretium ut lacinia in, elementum id enim.</em>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+            <a class="btn btn-sm btn-primary" href="#" role="button">SHOW MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- molly is great for.. -->
+    <div class="container-fluid text-center">
+      <div class="container">
+        <div>MOLLY IS GREAT FOR ANY BUSSINES</div>
+        <em class="center-block">Yes Mentum is fully responsive,and look’s great on any device.</em>
+        <div>
+          <a class="btn btn-sm btn-primary" href="#" role="button">SHOW MORE</a>
+        </div>
+        <img class="img-responsive center-block" src="http://placehold.it/981x371?text=all+browsers" alt="..">
+      </div>
+    </div>
+
+
+
+
+    <!-- about us -->
+    <div class="container">
+      <img src="http://placehold.it/200x200" alt=".." class="pull-left">
+      <div>
+        <div>ABOUT US</div>
+        <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+      </div>      
+    </div>
+
+
+
+
+    <!-- skills -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <div>SKILLS</div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%;">
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%;">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div>ABOUT COMPANY</div>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- blog -->
+    <div class="container text-center">
+      <h2>BLOG</h2>
+      <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="article">
+            <img class="img-responsive" src="http://placehold.it/570x220" alt="..">
+            <div>Sample Blog Title</div>
+            <div>November ,2013 by John Doe</div>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+            <div class="text-right">
+              <a href="#">READ MORE..</a>
+            </div>
+          </div>
+        </div>   
+        <div class="col-sm-6">
+          <div class="article">
+            <img class="img-responsive" src="http://placehold.it/570x220" alt="..">
+            <div>Sample Blog Title</div>
+            <div>November ,2013 by John Doe</div>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+            <div class="text-right">
+              <a href="#">READ MORE..</a>
+            </div>
+          </div>
+        </div>        
+      </div>   
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="article">
+            <img class="img-responsive" src="http://placehold.it/570x220" alt="..">
+            <div>Sample Blog Title</div>
+            <div>November ,2013 by John Doe</div>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+            <div class="text-right">
+              <a href="#">READ MORE..</a>
+            </div>
+          </div>
+        </div>   
+        <div class="col-sm-4">
+          <div class="article">
+            <img class="img-responsive" src="http://placehold.it/570x220" alt="..">
+            <div>Sample Blog Title</div>
+            <div>November ,2013 by John Doe</div>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+            <div class="text-right">
+              <a href="#">READ MORE..</a>
+            </div>
+          </div>
+        </div>  
+        <div class="col-sm-4">
+          <div class="article">
+            <img class="img-responsive" src="http://placehold.it/570x220" alt="..">
+            <div>Sample Blog Title</div>
+            <div>November ,2013 by John Doe</div>
+            <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+            <div class="text-right">
+              <a href="#">READ MORE..</a>
+            </div>
+          </div>
+        </div>      
+      </div>     
+      <div>
+        <a class="btn btn-sm btn-primary" href="#" role="button">SHOW MORE</a>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- subscribe -->
+    <div class="container-fluid text-center">
+      <div>SUBSCRIBE TO OUR NEWSLETTER</div>
+      <input type="text" placeholder="Your Mail">
+      <a class="btn btn-sm btn-primary" href="#" role="button">SUBSCRIBE</a>
+    </div>
+
+
+
+
+    <!-- contact us -->
+    <div class="container-fluid text-center">
+      <div class="container">
+        <h2>CONTACT US</h2>
+        <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+        <div class="row">
+          <div class="col-sm-4">
+            <input type="text">
+          </div>
+          <div class="col-sm-4">
+            <input type="text">
+          </div>
+          <div class="col-sm-4">
+            <input type="text">
+          </div>
+        </div>
+        <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+        <div>
+          <a class="btn btn-sm btn-primary" href="#" role="button">SEND MESSAGE</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <div class="container text-center">
+      <div class="container">
+        <div>
+          <a href="mailto:awesomemail@ourmail.com" target="_top">awesomemail@ourmail.com</a>
+        </div>
+        <div>(0) 123-456-789-00</div>
+        <div>
+          <ul class="list-inline">
+            <li><a href="#">01</a></li>
+            <li><a href="#">02</a></li>
+            <li><a href="#">03</a></li>
+            <li><a href="#">04</a></li>
+            <li><a href="#">05</a></li>
+            <li><a href="#">06</a></li>
+            <li><a href="#">07</a></li>
+          </ul>
+        </div>
+        <div><a href="#">&copy; Copyright 2013 Molly. All Rights Reserved.</a></div>
+      </div>
+    </div>
+
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
+    
+    
