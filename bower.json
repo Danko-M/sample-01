@@ -1,0 +1,21 @@
+{
+  "name": "Danko",
+  "version": "0.0.1",
+  "authors": [
+    "Danko-M <dankomilutinovic@gmail.com>"
+  ],
+  "description": "responsive homepage",
+  "license": "MIT",
+  "homepage": "http://danko-m.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1",
+    "bootstrap": "~3.3.5"
+  }
+}
