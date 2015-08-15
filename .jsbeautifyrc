@@ -1,6 +1,7 @@
 {
   "html": {
-    "indent_size": 2 // Indentation size    
+    "indent_size": 2, // Indentation size    
+    "indent_inner_html": true // Indent <head> and <body> sections
   },
   "css": {
     "indent_size": 2 // Indentation size    

@@ -2,11 +2,67 @@
 
 
 */
+
+
+/*
+// colors
+#324651 - darkblue bg
+#ffe500 - yellow bg + txt
+
+#334752 - darkblue txt
+
+
+*/
+
+.blue-bg {
+  background: #324651;
+  color: #fff;
+}
+
+.blue-txt {
+  color: #334752;
+}
+
+.yellow-bg {
+  background: #ffe500;
+}
+
+.yellow-txt {
+  color: #ffe500;
+}
+
+.black-bg {
+  background: #182227;
+  color: #fff;
+}
+
+input,
+textarea {
+  color: #334752;
+  width: 100%;
+}
+
+.email {
+  width: 150px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   font-weight: 400;
+  color: #334752;
 }
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
 .navbar-default {
   background: #fff;
 }
@@ -23,6 +79,17 @@ body {
 .navbar-collapse .navbar-brand {
   display: none;
 }
+.carousel-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.carousel-inner>.item {
+  padding: 150px 0;
+}
+
+.carousel-indicators {
+  bottom: 90px;
+}
 
 .devices {
   width: 100%;
@@ -35,16 +102,24 @@ body {
 }
 
 .progress-bar {
-  background-color: #F5E735;
+  background-color: #ffe500;
 }
 
 .article {
   text-align: left;
 }
 
+.media-object {
+  width: 64px;
+  height: 64px;
+}
+.bg-triangles {
+  background: url(../img/bg-triangles.png);
+  color: #fff;
+}
 @media only screen and (min-width: 768px) {
   .navbar {
-    height: 45px;
+    height: 42px;
     min-height: inherit;
     border: none;
   }
@@ -63,10 +138,15 @@ body {
   .list-inline>li {
     padding: 0;
   }
+
   .devices {
     max-width: 100%;
   }
   .article {
     border-bottom: 3px solid #999;
+  }
+  .media-object {
+    width: auto;
+    height: auto
   }
 }
