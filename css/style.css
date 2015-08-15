@@ -117,6 +117,20 @@ a:focus {
   background: url(../img/bg-triangles.png);
   color: #fff;
 }
+.social {
+  background: #fff;
+  width: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 30px;
+  margin-right: 10px;
+}
+.fa {
+  color: #334752;
+}
+.social:hover .fa {
+  color: #54788C;
+}
 @media only screen and (min-width: 768px) {
   .navbar {
     height: 42px;
@@ -139,7 +153,7 @@ a:focus {
     padding: 0;
   }
 
-  .devices {
+  .mobile {
     max-width: 100%;
   }
   .article {
