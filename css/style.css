@@ -57,6 +57,8 @@ textarea:focus {
 }
 
 .email {
+  position: relative;
+  top: 2px;
   width: 150px;
   padding: 0 20px;
   background: #fff;
@@ -84,22 +86,27 @@ a:focus {
   padding-bottom: 50px;
   text-align: center;
 }
+
 .v-spacing-m {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .v-spacing-p {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .v-spacing-sm-m {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 .v-spacing-sm-p {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .spacing-top {
   padding-top: 50px;
 }
@@ -191,9 +198,11 @@ a:focus {
 .carousel-indicators {
   bottom: 90px;
 }
+
 .carousel-indicators .active {
   background: #ffe500;
 }
+
 .big-txt {
   font-size: 50px;
 }
@@ -207,6 +216,7 @@ a:focus {
   position: relative;
   padding: 15px;
 }
+
 .services-item img {
   margin-bottom: 30px;
 }
@@ -240,11 +250,32 @@ a:focus {
   background: url(../img/bg-triangles.png);
   color: #fff;
 }
+
 .mobile {
   margin-bottom: 60px;
 }
+
+.article {
+  border-bottom: 3px solid #999;
+}
+
+.article > * {
+  margin-bottom: 10px;
+}
+
 .white-txt {
   color: #fff;
+}
+
+.subscribe-msg {
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.black-bg > div > div {
+  margin-bottom: 20px;
 }
 
 .social {
@@ -260,8 +291,8 @@ a:focus {
   color: #334752;
 }
 
-.social:hover .fa {
-  color: #54788C;
+.social:hover {
+  background: #ffe500;
 }
 
 @media only screen and (min-width: 768px) {
@@ -316,12 +347,12 @@ a:focus {
     max-width: 100%;
     margin-bottom: -100px;
   }
-  .article {
-    border-bottom: 3px solid #999;
-  }
   .media-object {
     width: auto;
     height: auto
+  }
+  .media-body > * {
+    margin-left: 20px;
   }
   .email {
     width: 350px;
