@@ -51,6 +51,11 @@ textarea {
   border-radius: 5px;
 }
 
+input:focus,
+textarea:focus {
+  outline-color: #ffe500;
+}
+
 .email {
   width: 150px;
   padding: 0 20px;
@@ -79,10 +84,24 @@ a:focus {
   padding-bottom: 50px;
   text-align: center;
 }
-
-.v-spacing {
+.v-spacing-m {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.v-spacing-p {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.v-spacing-sm-m {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.v-spacing-sm-p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.spacing-top {
+  padding-top: 50px;
 }
 
 .h2 {
@@ -112,27 +131,27 @@ a:focus {
 }
 
 .btn-primary {
-  color: #ffe500;
+  color: #324651;
   background: #fff;
   border-color: #fff;
 }
 
 .btn-primary:hover {
-  color: #fff;
+  color: #324651;
   background: #ffe500;
   border-color: #fff;
 }
 
 .btn-secondary {
-  color: #fff;
+  color: #324651;
   background: #ffe500;
   border-color: #fff;
 }
 
 .btn-secondary:hover {
-  color: #ffe500;
+  color: #324651;
   background: #fff;
-  border-color: #fff;
+  border-color: #ffe500;
 }
 
 .navbar {
@@ -172,7 +191,9 @@ a:focus {
 .carousel-indicators {
   bottom: 90px;
 }
-
+.carousel-indicators .active {
+  background: #ffe500;
+}
 .big-txt {
   font-size: 50px;
 }
@@ -180,6 +201,14 @@ a:focus {
 .p-narrowed {
   max-width: 770px;
   margin: 0 auto 90px;
+}
+
+.services-item {
+  position: relative;
+  padding: 15px;
+}
+.services-item img {
+  margin-bottom: 30px;
 }
 
 .devices {
@@ -211,7 +240,9 @@ a:focus {
   background: url(../img/bg-triangles.png);
   color: #fff;
 }
-
+.mobile {
+  margin-bottom: 60px;
+}
 .white-txt {
   color: #fff;
 }
@@ -274,8 +305,12 @@ a:focus {
     width: 70%;
     height: 2px;
     background: #ffe500;
-    top: 58px;
+    top: 74px;
     margin: 0 auto;
+  }
+  .services-item {
+    width: 25%;
+    float: left;
   }
   .mobile {
     max-width: 100%;
