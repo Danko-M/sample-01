@@ -27,7 +27,8 @@
   background: #ffe500;
 }
 
-.yellow-txt {
+.yellow-txt,
+.yellow-txt:hover {
   color: #ffe500;
 }
 
@@ -36,8 +37,19 @@
   color: #fff;
 }
 
+.container-fluid,
+.container {
+  position: relative;
+}
+
 .no-p {
   padding: 0;
+}
+
+.anchor {
+  position: absolute;
+  position: relative;
+  top: -50px;
 }
 
 input,
@@ -69,6 +81,7 @@ textarea:focus {
 }
 
 body {
+  position: relative;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -137,28 +150,32 @@ a:focus {
   border-radius: 50px;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primary:focus {
   color: #324651;
-  background: #fff;
+  background-color: #fff;
   border-color: #fff;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, 
+.btn-primary:active {
   color: #324651;
-  background: #ffe500;
+  background-color: #ffe500 !important;
+  border-color: #fff !important;
+}
+
+.btn-secondary,
+.btn-secondary:focus {
+  color: #324651;
+  background-color: #ffe500;
   border-color: #fff;
 }
 
-.btn-secondary {
+.btn-secondary:hover,
+.btn-secondary:active {
   color: #324651;
-  background: #ffe500;
-  border-color: #fff;
-}
-
-.btn-secondary:hover {
-  color: #324651;
-  background: #fff;
-  border-color: #ffe500;
+  background-color: #fff !important;
+  border-color: #ffe500 !important;
 }
 
 .navbar {
@@ -186,7 +203,13 @@ a:focus {
 .navbar-collapse .navbar-brand {
   display: none;
 }
-
+.nav>li>a:focus, 
+.nav>li>a:hover {
+  background: #fff;
+}
+.nav>li.active>a {
+  color: #FFE500;
+}
 .carousel {
   font-weight: 300;
 }
@@ -296,6 +319,13 @@ a:focus {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    padding-top: 87px;
+  }
+  .anchor {
+    position: absolute;
+    top: -86px;
+  }
   .navbar {
     line-height: 66px;
     min-height: inherit;
