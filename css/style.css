@@ -36,6 +36,10 @@
   color: #fff;
 }
 
+.no-p {
+  padding: 0;
+}
+
 input,
 textarea {
   color: #334752;
@@ -58,21 +62,30 @@ a:hover,
 a:focus {
   color: inherit;
 }
-
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.v-spacing {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .h2 {
   position: relative;
   padding-bottom: 35px;
-  margin-top: 90px;
+  margin-top: 40px;
   margin-bottom: 45px;
   color: #334752;
-  font-size: 70px;
+  font-size: 30px;
 }
 
 .h2:after {
   position: absolute;
   content: url(../img/decoration.png);
   top: 50px;
-  left: 46.3%;
+  left: 0;
+  right: 0;
 }
 
 .h2-white {
@@ -147,7 +160,7 @@ a:focus {
 }
 
 .big-txt {
-  font-size: 100px;
+  font-size: 50px;
 }
 
 .p-narrowed {
@@ -170,6 +183,8 @@ a:focus {
 }
 
 .article {
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -229,8 +244,28 @@ a:focus {
   .list-inline>li {
     padding: 0;
   }
+  .big-txt {
+    font-size: 100px;
+  }
+  .h2 {
+    font-size: 70px;
+  }
+  .services {
+    position: relative;
+  }
+  .services:before {
+    position: relative;
+    content: "";
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: #ffe500;
+    top: 58px;
+    margin: 0 auto;
+  }
   .mobile {
     max-width: 100%;
+    margin-bottom: -100px;
   }
   .article {
     border-bottom: 3px solid #999;
