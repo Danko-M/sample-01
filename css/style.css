@@ -42,12 +42,23 @@
 
 input,
 textarea {
-  color: #334752;
   width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: #fff;
+  background-color: #324651;
+  border: 1px solid #fff;
+  border-radius: 5px;
 }
 
 .email {
   width: 150px;
+  padding: 0 20px;
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  color: #334752;
+  line-height: 30px;
 }
 
 body {
@@ -62,15 +73,18 @@ a:hover,
 a:focus {
   color: inherit;
 }
+
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
 }
+
 .v-spacing {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .h2 {
   position: relative;
   padding-bottom: 35px;
@@ -273,5 +287,12 @@ a:focus {
   .media-object {
     width: auto;
     height: auto
+  }
+  .email {
+    width: 350px;
+  }
+  input,
+  textarea {
+    padding: 20px;
   }
 }
