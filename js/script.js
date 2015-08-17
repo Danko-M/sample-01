@@ -65,5 +65,9 @@ $(function() {
     $(this).parent('li').addClass('current');
   });
 
+  // smooth scrolling on mouse wheel
+  jQuery.scrollSpeed(400, 800);
+
+
 
 });
