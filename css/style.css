@@ -1,16 +1,15 @@
 /*
+Author: Danko Milutinovic
+Desctiption: 
+  styles for http://danko-m.github.io/sample-01/
+Contact:  dankomilutinovic@gmail.com, 
+          https://rs.linkedin.com/pub/danko-milutinovic/a3/675/778 
 
-
-*/
-
-
-/*
 // colors
+
 #324651 - darkblue bg
 #ffe500 - yellow bg + txt
-
 #334752 - darkblue txt
-
 
 */
 
@@ -30,7 +29,7 @@
 .yellow-txt,
 .yellow-txt:hover,
 .ie8 .yellow-txt,
-.ie8 .yellow-txt:hover  {
+.ie8 .yellow-txt:hover {
   color: #ffe500;
 }
 
@@ -69,6 +68,7 @@ textarea {
 .ie8 textarea {
   margin-bottom: 30px;
 }
+
 input:focus,
 textarea:focus {
   outline-color: #ffe500;
@@ -85,10 +85,12 @@ textarea:focus {
   color: #334752;
   line-height: 30px;
 }
+
 .ie8 .email {
   top: 1px;
-  height:30px;
+  height: 30px;
 }
+
 body {
   position: relative;
   font-family: 'Open Sans', sans-serif;
@@ -145,9 +147,11 @@ a:focus,
   color: #334752;
   font-size: 30px;
 }
+
 .ie8 .h2 {
   margin-bottom: 45px;
 }
+
 .h2:after {
   display: block;
   content: "";
@@ -175,7 +179,7 @@ a:focus,
   border-color: #fff;
 }
 
-.btn-primary:hover, 
+.btn-primary:hover,
 .btn-primary:active {
   color: #324651;
   background-color: #ffe500 !important;
@@ -221,13 +225,16 @@ a:focus,
 .navbar-collapse .navbar-brand {
   display: none;
 }
-.nav>li>a:focus, 
+
+.nav>li>a:focus,
 .nav>li>a:hover {
   background: #fff;
 }
+
 .nav>li.active>a {
   color: #FFE500;
 }
+
 .carousel {
   font-weight: 300;
 }
@@ -267,39 +274,41 @@ a:focus,
   max-width: 390px;
   margin: 0 auto;
 }
+
+
 /*
   portfolio
 */
 
 .filter {
-    font-size: 16px;
-    list-style: none;
-    margin: 50px 0 30px;
-    width: 100%;
+  font-size: 16px;
+  list-style: none;
+  margin: 50px 0 30px;
+  width: 100%;
 }
 
 .filter li {
-    display: inline;
-    border-right: 1px solid #dedede;
-    line-height: 16px;
-    margin-right: 10px;
-    padding-right: 10px;
+  display: inline;
+  border-right: 1px solid #dedede;
+  line-height: 16px;
+  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .filter li:last-child {
-    border-right: none;
-    margin-right: 0;
-    padding-right: 0;
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .filter a {
-    color: #999;
-    text-decoration: none;
+  color: #999;
+  text-decoration: none;
 }
 
 .current a,
 .filter a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .current a {
@@ -307,25 +316,24 @@ a:focus,
 }
 
 .portfolio-items {
-    max-width: 672px;
-    margin: 0 auto;
-    padding-left: 0;
-    text-align: center;
-    list-style: none;
+  max-width: 672px;
+  margin: 0 auto;
+  padding-left: 0;
+  text-align: center;
+  list-style: none;
 }
 
 .portfolio-items li {
-    display: inline-block;
-    border: 1px solid #dedede;
-    margin: 0 5px 5px 0;
-    padding: 5px;
+  display: inline-block;
+  border: 1px solid #dedede;
+  margin: 0 5px 5px 0;
+  padding: 5px;
 }
 
 .portfolio-items img {
-    border: 1px solid #dedede;
-    display: block;
+  border: 1px solid #dedede;
+  display: block;
 }
-
 
 @media only screen and (min-width: 768px) {
   .portfolio-items {
@@ -333,9 +341,11 @@ a:focus,
   }
 }
 
+
 /*
   end portfolio
 */
+
 .progress,
 .ie8 .progress {
   height: 10px;
