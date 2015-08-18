@@ -1,18 +1,19 @@
 /*
-Author: Danko Milutinovic
-Desctiption: 
-  functions for http://danko-m.github.io/sample-01/
-Contact:  dankomilutinovic@gmail.com, 
-          https://rs.linkedin.com/pub/danko-milutinovic/a3/675/778 
+Author:       Danko Milutinovic
+Desctiption:  functions for http://danko-m.github.io/sample-01/
+Contact:      dankomilutinovic@gmail.com, 
+              https://rs.linkedin.com/pub/danko-milutinovic/a3/675/778, 
+              http://danko-m.github.io/ 
+Design:       https://www.behance.net/gallery/12966101/Molly-Creative-PSD-Template
 */
 
 $(function() {
 
   // smooth scroll
-  var navLinks = $('.nav>li');
+  // var navLinks = $('.nav>li');
   $('.nav a[href*=#]:not([href=#])').click(function() {
-    $(navLinks).removeClass('active');
-    $(this).parent().addClass('active');
+    // $(navLinks).removeClass('active');
+    // $(this).parent().addClass('active');
 
     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 
