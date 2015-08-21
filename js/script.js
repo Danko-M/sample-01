@@ -10,13 +10,9 @@ Design:       https://www.behance.net/gallery/12966101/Molly-Creative-PSD-Templa
 $(function() {
 
   // smooth scroll
-  // var navLinks = $('.nav>li');
-  $('.nav a[href*=#]:not([href=#])').click(function() {
-    // $(navLinks).removeClass('active');
-    // $(this).parent().addClass('active');
-
+  var $navLinks = $('.nav a[href*=#]:not([href=#])');
+  $navLinks.click(function() {
     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
@@ -29,12 +25,12 @@ $(function() {
   });
 
 
-
-
   // portfolio galery
   $('.filter a').click(function(e) {
     e.preventDefault();
-    $(this).css('outline', 'none');
+    $(this).parents('li').siblings().removeClass('current');
+    $(this).parent('li').addClass('current');
+    
     var filterVal = $(this).text().toLowerCase().replace(' ', '-');
     var itemsLength = $('.portfolio-items li:visible').length;
     $('.portfolio-items li:visible').each(function(i) {
@@ -45,6 +41,7 @@ $(function() {
       });
     });
     return false;
+
   });
 
   function show(filterVal) {
@@ -59,16 +56,8 @@ $(function() {
     }
   }
 
-  $('.filter a').click(function(e) {
-    e.preventDefault();
-    console.log(this);
-    $(this).parent('li').siblings().removeClass('current');
-    $(this).parent('li').addClass('current');
-  });
 
   // smooth scrolling on mouse wheel
-  jQuery.scrollSpeed(400, 800);
-
-
+  jQuery.scrollSpeed(200, 1500);
 
 });
