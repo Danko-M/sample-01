@@ -24,13 +24,32 @@ $(function() {
     }
   });
 
+  // normalize carousel height
+  setCarouselHeight('#carousel-main');
+
+  function setCarouselHeight(id) {
+    var slideHeight = [];
+    $(id + ' .item').each(function() {
+      // add all slide heights to an array
+      slideHeight.push($(this).height());
+    });
+
+    // find the tallest item
+    var max = Math.max.apply(null, slideHeight);
+
+    // set the slide's height
+    $(id + ' .carousel-content').each(function() {
+      $(this).css('height', max + 'px');
+    });
+  }
+
 
   // portfolio galery
   $('.filter a').click(function(e) {
     e.preventDefault();
     $(this).parents('li').siblings().removeClass('current');
     $(this).parent('li').addClass('current');
-    
+
     var filterVal = $(this).text().toLowerCase().replace(' ', '-');
     var itemsLength = $('.portfolio-items li:visible').length;
     $('.portfolio-items li:visible').each(function(i) {
